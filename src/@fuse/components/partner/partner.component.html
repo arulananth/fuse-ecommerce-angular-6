@@ -1,0 +1,36 @@
+
+<div fxLayout="row"  class="dashcard best-partner">
+    <div fxFlex="25" fxLayout="row">
+        <div class="pt-15">
+        <img class="img-fluid" [src]="'./assets/images/logos/logo.png'" style="width:90%">
+        </div>
+    </div>
+    <div fxFlex="50" fxLayout="row"  fxLayoutAlign="center stretch">   
+                <div class="bmiddle pt-15 pb-30">
+                    <h3>{{dashData.pname}}</h3>
+                    <h6>{{dashData.pname}}</h6>
+                    <button mat-button class="user-button yellowbtn">
+                        <div fxLayout="row" fxLayoutAlign="center center" class="clav font13 text-uppercase">
+                           <mat-icon class="s-16" >person</mat-icon>
+                            <span class="username mr-12 cblack">Loreum Ipsam</span>
+                        </div>
+                    </button>
+                </div>
+    </div>
+    <div  fxFlex="25" fxLayout="column" fxLayoutAlign="" >
+         
+        <div>
+            <div class="bright-right">
+                ${{dashData.ppercent}}
+            </div>
+        </div>
+        <div class="bright">
+            <div class="star-icon">
+                    <mat-icon class="s-16">star</mat-icon>
+                    <mat-icon class="s-16">star</mat-icon>
+                    <mat-icon class="s-16">star</mat-icon>
+             </div>
+
+        </div>
+    </div>
+</div>

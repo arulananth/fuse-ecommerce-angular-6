@@ -1,0 +1,82 @@
+:host {
+    display: flex;
+    flex: 0 1 auto;
+    z-index: 3;
+
+    .mat-toolbar {
+        background: inherit;
+        color: inherit;
+        box-shadow: 0px -1px 1px -1px rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.14), 0px -1px 3px 0px rgba(0, 0, 0, 0.12);
+    }
+
+    &.above {
+        position: relative;
+        z-index: 99;
+    }
+}
+
+.footer
+{
+    width:100%;
+    .footbg-top 
+    {
+        background-color: #3b0344 !important;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        padding-left:25px;
+        paddding-right:25px;
+    }
+
+
+    .footbg-btm 
+    {
+        background-color: #1d001e !important;
+        padding:25px;
+        .mat-list-item-content
+        {
+            text-align:center;
+        }
+        
+    }
+    .foothead
+        {
+            font-size: 20px;
+            margin-bottom: 20px;
+            padding-left: 15px;
+            margin-top:0px;
+
+        }
+    .mr-6
+    {
+        margin-right:6px !important;
+    }
+    .footsocial .mat-list-item
+    {
+        float: left;
+        color:#fff !important;
+    }
+
+    .fm1 .mat-list-item a
+    {
+        
+        color:#fff !important;
+    }
+
+    .fm1 .mat-list-item .mat-list-item-content
+    {
+        border:1px solid #fff;
+        border-radius:50px;
+    }
+
+    .fm2
+    {
+        color:#954db3 !important;
+    }
+}
+
+.fttoggle
+{
+        border: 1px solid #ccc !important;
+        border-radius: 6px !important;
+        width:50px !important;
+}

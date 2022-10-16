@@ -1,0 +1,47 @@
+
+
+<div class="page-layout blank p-24">
+<div fxLayout="row" fxLayout="'row wrap'" class="form-div">
+    <div fxFlex="50" fxLayout="row" fxFlex.xs="100" f fxLayoutAlign="center center">   
+                <div class="">
+                    <img class="flag mr-16" [src]="'assets/images/logos/logo.png'">
+
+                </div>
+    </div>
+    <div fxFlex="50" fxLayout="row" fxFlex.xs="100"  fxLayoutAlign="center center">   
+                <div class="" fxFlex="100">
+                  <mat-card class="login-card">
+					  <mat-card-header fxLayoutAlign="center center">
+					    <mat-card-title class="clav font20">Lorum Ipsum</mat-card-title>
+					  </mat-card-header>
+					  <mat-card-content>
+					    <mat-horizontal-stepper linear #stepper>
+					  <mat-step [stepControl]="firstFormGroup" [editable]="isEditable">
+					    <form [formGroup]="firstFormGroup">
+					      <mat-form-field fxFlex="grow" appearance="outline">
+					        <input matInput placeholder="Lorum Ipsum" formControlName="firstCtrl" required>
+					      </mat-form-field>
+					      <div>
+					        <button mat-button matStepperNext fxFlex="grow" class="laverderbtn cwhite wi100">Next</button>
+					      </div>
+					    </form>
+					  </mat-step>
+					  <mat-step [stepControl]="secondFormGroup" [editable]="isEditable">
+					    <form [formGroup]="secondFormGroup">
+					      <mat-form-field appearance="outline">
+					        <input matInput placeholder="Password" formControlName="secondCtrl" required>
+					      </mat-form-field>
+					      <div>
+					        <button mat-button matStepperNext fxFlex="grow" class="laverderbtn cwhite wi100">Login</button>
+					      </div>
+					    </form>
+					  </mat-step>
+					</mat-horizontal-stepper>
+					  </mat-card-content>					  
+					</mat-card>  
+
+                </div>
+    </div>
+</div>
+
+</div>

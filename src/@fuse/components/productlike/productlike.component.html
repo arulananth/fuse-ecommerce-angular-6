@@ -1,0 +1,20 @@
+<div fxLayout="row" fxLayout="'row wrap'" class="form-div">
+        <div fxFlex="25" fxFlex.sm="33.3" fxLayout="column" fxLayout.xs="column" fxLayoutAlign="center stretch" fxFlex.xs="100" fxLayoutAlign.xs="center center" *ngFor="let number of [0,1,2,3]">   
+                    <div class="p-relative m-10">
+                        <img class="flag mr-16" [src]="'assets/images/product/phone.jpg'">
+                        
+                         <p class="cblack text-center">When a breakpoint is activated and the hosting element does NOT have a responsive API defined for the newly activated breakpoint, the Flex-Layout responsive engine uses a fallback, descending-scan algorithm to determine the replacement activation value.</p>
+                        <button mat-button class="user-button yellowbtn wi100 p-relative">
+                            <div fxLayout="row" fxFlex="75" fxLayoutAlign="start center" class="cwhite font13 text-uppercase">
+                               <mat-icon class="s-16">shopping_cart</mat-icon>
+                                <span class="username mr-12">Loreum Ipsam</span>
+                                <span  class="username mr-12 price-cart" >$34.00</span>
+                            </div>
+                        </button>
+                        <div class="triangletopleft"></div>
+                        <div class="discount-cart">10%<br>
+                            <mat-icon>favorite_border</mat-icon>
+                        </div>
+                    </div>
+        </div>
+    </div>

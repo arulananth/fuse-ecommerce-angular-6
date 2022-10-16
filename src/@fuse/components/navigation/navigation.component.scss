@@ -1,0 +1,40 @@
+@import 'src/@fuse/scss/fuse';
+
+fuse-navigation {
+    display: flex;
+    flex: 1 0 auto;
+
+    #main-navigation {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+    }
+}
+
+.toolbar-user-btn 
+{
+	color:#954db3 !important;
+}
+.mat-fuse-dark-700-bg .icon
+        {
+           color:#954db3 !important;
+        }
+.ham-nav
+{
+    background:#f5f7f9 !important;
+    border:#e9ecef !important;
+    padding:5px !important;
+    .toggle-button-navbar
+    {
+         border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+    .mat-icon
+    {
+      color:#ccc !important;
+    }
+}
+
+   

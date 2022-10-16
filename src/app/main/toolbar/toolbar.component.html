@@ -1,0 +1,70 @@
+<mat-toolbar class="p-0 mat-elevation-z1 mainbackground">
+    <mat-progress-bar *ngIf="showLoadingBar" class="loading-bar" color="accent" mode="indeterminate"></mat-progress-bar>
+    <div fxFlex fxFill fxLayout="row" fxLayoutAlign="start center">
+        <div fxFlex="1 0 auto" fxLayout="row" fxLayoutAlign="start center">
+            
+            <div class="toolbar-separator" fxHide.gt-md></div>
+            
+            <div class="px-8 px-mat-16  cwhite font13">
+                yourlogo.com
+            </div>
+        </div>
+        <div class="" fxFlex="0 1 auto" fxLayout="row" fxLayoutAlign="start center" fxLayoutAlign.xs="center center">
+            <button mat-button fxHide fxShow.gt-xs
+                    class="language-button"
+                    [matMenuTriggerFor]="languageMenu">
+                <div fxLayout="row" fxLayoutAlign="center center">
+                    <img class="flag mr-8" [src]="'assets/images/flags/'+selectedLanguage.flag+'.png'">
+                    <!--<span class="iso text-uppercase">{{selectedLanguage.id}}</span>-->
+                </div>
+            </button>
+
+            <mat-menu #languageMenu="matMenu" [overlapTrigger]="false">
+                <button mat-menu-item *ngFor="let lang of languages" (click)="setLanguage(lang)">
+                    <div fxLayout="row" fxLayoutAlign="start center">
+                        <img class="flag mr-16" [src]="'assets/images/flags/'+lang.flag+'.png'">
+                        <!--<span class="iso">{{lang.title}}</span>-->
+                    </div>
+                </button>
+            </mat-menu>
+            <div class="toolbar-separator"></div>
+            
+            <button mat-button [matMenuTriggerFor]="userMenu"
+                    class="user-button cwhite">
+                <div fxLayout="row" fxLayoutAlign="center center">
+                    <mat-icon class="s-16 mr-6">person</mat-icon>
+                    <span class="username mr-12" fxHide.xs>{{'TOOLMENU.USER' | translate}}</span>
+                </div>
+            </button>
+            <mat-menu #userMenu="matMenu" [overlapTrigger]="false">
+                <button mat-menu-item>
+                    <mat-icon>account_circle</mat-icon>
+                    <span>My Profile</span>
+                </button>
+                <button mat-menu-item class="">
+                    <mat-icon>mail</mat-icon>
+                    <span>Inbox</span>
+                </button>
+                <button mat-menu-item class="">
+                    <mat-icon>exit_to_app</mat-icon>
+                    <span>Logout</span>
+                </button>
+            </mat-menu>
+            <div class="toolbar-separator"></div>
+            <button mat-button class="user-button cwhite">
+                <div fxLayout="row" fxLayoutAlign="center center">
+                    <mat-icon matBadge="22" matBadgePosition="above after"  matBadgeColor="warn" class="s-16 mr-6">shopping_cart</mat-icon>
+                    <span class="username mr-12" fxHide.xs>{{'TOOLMENU.USER' | translate}}</span>
+                </div>
+            </button>
+            <div class="toolbar-separator"></div>
+            <button mat-button class="user-button cwhite">                    
+                <div fxLayout="row" fxLayoutAlign="center center">
+                    <mat-icon class="s-16 mr-6">phone</mat-icon>
+                    <span class="username mr-12" fxHide.xs>{{'TOOLMENU.USER' | translate}}</span>
+                </div>
+            </button>
+            
+        </div>
+    </div>
+</mat-toolbar>

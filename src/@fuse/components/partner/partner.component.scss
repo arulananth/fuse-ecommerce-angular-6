@@ -1,0 +1,80 @@
+@import "src/@fuse/scss/fuse";
+
+
+
+
+.best-partner{
+    margin: 10px 5px;
+    background-color: white;
+    border: 1px solid #000;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    mat-icon
+    {
+        &.s-16 {
+            font-size: 16px !important;
+            width: 16px !important;
+            height: 16px !important;
+            min-width: 16px !important;
+            min-height: 16px !important;
+            line-height: 16px !important;
+            color:#000;
+         }
+    }
+     .bmiddle 
+     {
+        .yellowbtn {
+             background: #e8a812 !important;
+            }
+             h3 {
+            color: #954db3 !important;
+            font-family: 'Roboto Slab', serif;
+            margin-bottom: 35px;
+            margin-top:2px !important;
+        }
+        h6 {
+            color: #954db3 !important;
+            margin-bottom: 35px;
+        } 
+     }
+     .pt-15
+        {
+            padding-top:15px;
+        }
+
+        .pb-30
+        {
+            padding-bottom:30px;
+        }
+
+     .bright 
+     {
+        text-align:right;
+        padding-right:5px;
+        .star-icon
+        {
+             .s-16 {
+                font-size: 12px !important;
+                width: 13px !important;
+                height: 13px !important;
+                min-width: 13px !important;
+                min-height: 13px !important;
+                line-height: 16px !important;
+                color: #e8a812 !important;
+            }
+        }
+     }
+
+    .bright-right 
+    {
+        text-align: left;
+        float: right;
+        width: 50px;
+        background: #954db3;
+        height: 50px;
+        color: #fff;
+        padding-left: 5px;
+        padding-top: 5px;
+    }
+    
+} 

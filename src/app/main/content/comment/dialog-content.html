@@ -1,0 +1,29 @@
+<h2 mat-dialog-title>Loreum Ipsum</h2>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close fxLayoutAlign="end end"><mat-icon class="s-16 mr-5">close</mat-icon></button>
+</mat-dialog-actions>
+<mat-dialog-content>
+<div fxLayout="row" fxLayout="'row wrap'" class="form-div br-btm"  *ngFor="let number of [0,1,2,3,4]">
+    <div fxFlex="25" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center stretch" fxFlex.xs="100" fxLayoutAlign.xs="center center">   
+                <div class="">
+                    <img class="flag mr-16" [src]="'assets/images/logos/logo.png'">
+                </div>
+    </div>
+    <div fxFlex="75" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="start center" fxFlex.xs="100">   
+                <div class="">
+                    <h3>Loreum Ipsum:135</h3>
+                    <p>Loreum ipsum Loreujm ipsum</p>
+                    <p class="mrb-20">23/08/18</p>
+                     <p class="text-uppercase">Auto rated</p>
+                     <div class="star-icon mrb-20 clav">
+                        <mat-icon class="s-16">star</mat-icon>
+                        <mat-icon class="s-16">star</mat-icon>
+                        <mat-icon class="s-16">star</mat-icon>
+                        <mat-icon class="s-16">star</mat-icon>
+                        <mat-icon class="s-16">star</mat-icon>
+                      </div>
+                </div>
+    </div>
+    
+</div>
+</mat-dialog-content>

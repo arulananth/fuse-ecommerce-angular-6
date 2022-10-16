@@ -1,0 +1,82 @@
+
+  <div class="footer">
+    <div fxLayout="row" fxLayoutAlign="" fxLayout.xs="column" class="footbg-top">
+        <div fxFlex="30" fxFlex.xs="100" fxLayoutAlign="start start" fxLayoutAlign.xs="start start">
+            <img class="flag mr-16" [src]="'assets/images/logos/logo.png'">
+        </div>
+        <div fxFlex="30" fxFlex.xs="100" fxLayoutAlign="start start" fxLayoutAlign.xs="start start">
+            <div class="foot-menus">
+            <h5 class="foothead">Loreum Ipsom</h5>
+
+            <mat-list class="footer-menu">
+                 <mat-list-item *ngFor="let fmenus of footmenu"> 
+
+                    <button mat-button class="user-button">
+                        <div fxLayout="row" fxLayoutAlign="center center" class="cwhite font13">
+                            <mat-icon class="s-16 mr-6">{{fmenus.icons}}</mat-icon>
+                            <span class="username mr-12" fxShow.gt-sm>{{fmenus.title}}</span>
+                            
+                        </div>
+                    </button>
+                 </mat-list-item>
+                 
+            </mat-list>
+              </div>
+        </div>
+        <div fxFlex="40" fxFlex.xs="100" fxLayoutAlign.xs="start start">
+            <div>
+            
+            <img class="flag mr-16" [src]="'assets/images/logos/logo.png'">
+            
+             
+                <p>Loreum Ipsum</p>
+            
+           </div>
+        </div>
+
+    </div>
+    <div fxLayout="row" fxLayout.xs="column" fxLayout="'row wrap" fxLayoutAlign.xs="start start" class="footbg-btm" fxLayoutAlign="start start">
+        <div fxFlex="30" fxLayoutAlign="start center" fxFlex.lt-md="100">
+            <div>
+            <mat-list class="footer-menu fm1 footsocial">
+                <mat-list-item><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></mat-list-item>
+                <mat-list-item><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></mat-list-item>
+                <mat-list-item><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></mat-list-item>
+                <mat-list-item><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></mat-list-item>
+                <mat-list-item><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></mat-list-item>
+            </mat-list>
+               <p>Loreum ipsum Loreum ipsdum</p>
+             </div>
+        </div>
+        <div fxFlex="70" fxLayoutAlign="end" fxHide.lt-md="true" fxFlex.lt-md="100" fxLayoutAlign.lt-md="start">
+            <mat-list class="footer-menu fm1 fm2">
+                <mat-list-item><a href="#">Lorum Ipsum</a></mat-list-item>
+                <mat-list-item fxHide.xs><div class="toolbar-separator"></div></mat-list-item>
+                <mat-list-item><a href="#">Lorum Ipsum</a></mat-list-item>
+                <mat-list-item fxHide.xs><div class="toolbar-separator"></div></mat-list-item>
+                <mat-list-item><a href="#">Lorum Ipsum</a></mat-list-item>
+            </mat-list>
+        </div>
+         <div class="" fxFlex="100" fxLayout="row" fxLayoutAlign="end end" fxFlex.xs="100" fxLayout.xs="column" fxLayoutAlign.xs="end end" fxHide fxShow.lt-md="true" class="wi100">
+                <button mat-icon-button class="toggle-button-navbar fttoggle"
+                    
+                    (click)="toggleFootMenu()">
+                <mat-icon>menu</mat-icon>
+               </button>
+
+        </div>
+
+        <div class="wi100 mobilemenu" [@slideInOut]="footmenuState">
+                
+            <mat-list class="footer-menu fm1 fm2">
+                <mat-list-item><a href="#">Lorum Ipsum</a></mat-list-item>
+                <mat-list-item fxHide.xs><div class="toolbar-separator"></div></mat-list-item>
+                <mat-list-item><a href="#">Lorum Ipsum</a></mat-list-item>
+                <mat-list-item fxHide.xs><div class="toolbar-separator"></div></mat-list-item>
+                <mat-list-item><a href="#">Lorum Ipsum</a></mat-list-item>
+            </mat-list>   
+       </div>
+        
+    </div>
+</div>
+

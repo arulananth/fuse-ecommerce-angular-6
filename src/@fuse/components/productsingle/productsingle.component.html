@@ -1,0 +1,240 @@
+
+<div fxLayout="row" fxLayout="'row wrap'" class="form-div">
+        <div fxFlex="30" fxFlex.sm="100" fxLayout="column" fxLayout.xs="column" fxLayoutAlign="center stretch" fxFlex.xs="100" fxLayoutAlign.sm="center center"  fxLayoutAlign.xs="center center" class="p-relative img-gal"> 
+                        
+                         <ngx-gallery #gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+                         <div class="cntrl">
+                         <button (click)="gallery.showPrev()" [disabled]="!gallery.canShowPrev()" class=" prevs imgaction"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                          <button (click)="gallery.showNext()" [disabled]="!gallery.canShowNext()" class="nexts imgaction"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                          </div>
+                         <div class="triangletopleft"></div>
+                            <div class="discount-cart">10%<br>
+                                <mat-icon>favorite_border</mat-icon>
+                            </div>
+                    
+                   
+                    <div fxFlex="100" fxLayout="'row wrap'" class=" mr-t20 plr-40 wi100">
+                        <div fxFlex="50" fxLayout="column" fxLayout.xs="row" fxLayoutAlign="center start" fxFlex.xs="100"  fxLayoutAlign.xs="center center">
+                              <span><b>Loreum Iopsum (36)</b></span>
+                        </div>
+                        <div fxFlex="50" fxLayout="column" fxLayout.xs="row" fxLayoutAlign="start end" fxFlex.xs="100" fxLayoutAlign.xs="center center">
+                            <span class="clav"><b>$36.00</b></span>
+                        </div>
+                    </div>
+                    <div fxFlex="100" fxLayout="'row wrap'" class="mr-t20 wi100 plr-15">
+                        <div fxFlex="50" fxLayout="column" fxLayout.xs="row" fxLayoutAlign="center start" fxFlex.xs="100" fxLayoutAlign.xs="center center">
+                               <mat-form-field appearance="outline" class="cart-qty" fxFlex.xs="100">
+                                <input matInput >
+                              </mat-form-field>
+                        </div>
+                        <div fxFlex="50" fxLayout="column" fxLayout.xs="row" fxLayoutAlign="start end" fxFlex.xs="100" fxLayoutAlign.xs="center center">
+                           <button mat-button class="user-button yellowbtn"  (click)="openDialog()" fxFlex.xs="100" fxFlex="0 1 auto">
+                                <div fxLayout="row" fxLayoutAlign="start center" class="cblack font13" fxLayoutAlign.xs="center center">
+                                    <mat-icon class="s-16 mr-6">shopping_cart</mat-icon>
+                                    <span class="username mr-12">Loreum Ipsum</span>
+                                    
+                                </div>
+                          </button>
+                        </div>
+                    </div>
+        </div>
+        <div fxFlex="70" fxLayout="column" fxLayout.xs="column" fxLayoutAlign="start center" fxFlex.xs="100" fxLayoutAlign.xs="center center" fxHide.xs="true" fxHide.lt-md="true">   
+                    <div class="p-relative m-10 wi100">
+                        <mat-tab-group>
+                          <mat-tab label="First">
+                                <ng-template mat-tab-label>
+                                  <div fxLayout="row" fxLayoutAlign="start center" class="font13">
+                                    <mat-icon class="s-16 mr-12"><i class="fa fa-file-text-o" aria-hidden="true"></i></mat-icon>
+                                    <span class="username mr-12">Loreum Ipsum</span>
+                                    
+                                  </div>
+                                </ng-template>
+                                    <p class="pt-10">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    </p>
+                                    <hr>
+                                    <p class="pt-10 pb-10">
+                                        <b>Package Information</b>
+                                    </p>
+
+                                    <hr>
+                                    <ul>
+                                        <li>Loreum Ipsum</li>
+                                        <li>Loreum Ipsum</li>
+                                        <li>Loreum Ipsum</li>
+                                    </ul>
+
+                          </mat-tab>
+                          <mat-tab label="Second">
+                            <ng-template mat-tab-label>
+                                  <div fxLayout="row" fxLayoutAlign="start center" class="font13">
+                                    <mat-icon class="s-16 mr-12"><i class="fa fa-anchor" aria-hidden="true"></i></mat-icon>
+                                    <span class="username mr-12">Loreum Ipsum</span>
+                                    
+                                  </div>
+                                </ng-template>
+                                <table class="table table-striped table-single">
+                                <thead>
+                                   <tr>
+                                      <th>#</th>
+                                      <th>Lorum Ipsum</th>
+                                      <th>Lorum Ipsum</th>
+                                      <th>Lorum Ipsum</th>
+                                      <th>Lorum Ipsum</th>
+                                      <th>Lorum Ipsum</th>
+                                      <th>Lorum Ipsum</th>
+                                      
+                                   </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Free Shipping</td>
+                                        <td>Dhl Courier</td>
+                                        <td>Express Delivery</td>
+                                        <td>0</td>
+                                        <td>48</td>
+                                        <td  style="word-wrap: break-word">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</td>
+                                    </tr>
+                                     <tr>
+                                        <td>1</td>
+                                        <td>Free Shipping</td>
+                                        <td>Dhl Courier</td>
+                                        <td>Express Delivery</td>
+                                        <td>0</td>
+                                        <td>48</td>
+                                        <td  style="word-wrap: break-word">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                          </mat-tab>
+                          <mat-tab label="Third"> 
+                                <ng-template mat-tab-label>
+                                  <div fxLayout="row" fxLayoutAlign="start center" class="font13">
+                                    <mat-icon class="s-16 mr-12"><i class="fa fa-reply" aria-hidden="true"></i></mat-icon>
+                                    <span class="username mr-12">Loreum Ipsum</span>
+                                    
+                                  </div>
+                                </ng-template>Content 3 </mat-tab>
+                           <mat-tab label="Four"> 
+                            <ng-template mat-tab-label>
+                                 <div fxLayout="row" fxLayoutAlign="start center" class="font13">
+                                    <mat-icon class="s-16 mr-12"><i class="fa fa-files-o" aria-hidden="true"></i></mat-icon>
+                                    <span class="username mr-12">Loreum Ipsum</span>
+                                    
+                                  </div>
+                                </ng-template>
+                           Content 3 </mat-tab>
+                        </mat-tab-group>
+                    </div>
+        </div>
+
+       <!--mobile version -->
+        <div fxFlex="100" fxLayout="column" fxLayout.xs="column" fxLayoutAlign="start center" fxFlex.xs="100" fxLayoutAlign.xs="center stretch" fxHide fxShow.lt-md="true">
+            <div class="p-relative m-10 product-des-mobile mobile-mr-t-40">
+                <!--expansion panel-->
+                    <mat-accordion>
+
+                      <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                          <mat-panel-title>
+                            <div fxLayout="row" fxLayoutAlign="start center" class="font13">
+                                    <mat-icon class="s-16 mr-12"><i class="fa fa-file-text-o" aria-hidden="true"></i></mat-icon>
+                                    <span class="username mr-12">Loreum Ipsum</span>
+                              </div>
+                          </mat-panel-title>
+                          
+                        </mat-expansion-panel-header>
+                        <p class="pt-10">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    </p>
+                                    <hr>
+                                    <p class="pt-10 pb-10">
+                                        <b>Package Information</b>
+                                    </p>
+
+                                    <hr>
+                                    <ul>
+                                        <li>Loreum Ipsum</li>
+                                        <li>Loreum Ipsum</li>
+                                        <li>Loreum Ipsum</li>
+                                    </ul>
+                      </mat-expansion-panel>
+
+                      <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                          <mat-panel-title>
+                            <div fxLayout="row" fxLayoutAlign="start center" class="font13">
+                                    <mat-icon class="s-16 mr-12"><i class="fa fa-anchor" aria-hidden="true"></i></mat-icon>
+                                    <span class="username mr-12">Loreum Ipsum</span>
+                            </div>
+                          </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <div  style="overflow-x:auto;" class="pt-10">
+                        <table class="table table-striped table-single">
+                                <thead>
+                                   <tr>
+                                      <th>#</th>
+                                      <th>Lorum Ipsum</th>
+                                      <th>Lorum Ipsum</th>
+                                      <th>Lorum Ipsum</th>
+                                      <th>Lorum Ipsum</th>
+                                      <th>Lorum Ipsum</th>
+                                      <th>Lorum Ipsum</th>
+                                      
+                                   </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Free Shipping</td>
+                                        <td>Dhl Courier</td>
+                                        <td>Express Delivery</td>
+                                        <td>0</td>
+                                        <td>48</td>
+                                        <td  style="word-wrap: break-word">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</td>
+                                    </tr>
+                                     <tr>
+                                        <td>1</td>
+                                        <td>Free Shipping</td>
+                                        <td>Dhl Courier</td>
+                                        <td>Express Delivery</td>
+                                        <td>0</td>
+                                        <td>48</td>
+                                        <td  style="word-wrap: break-word">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                          </div>
+                      </mat-expansion-panel>
+
+                      <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                          <mat-panel-title>
+                            <div fxLayout="row" fxLayoutAlign="start center" class="font13">
+                                    <mat-icon class="s-16 mr-12"><i class="fa fa-reply" aria-hidden="true"></i></mat-icon>
+                                    <span class="username mr-12">Loreum Ipsum</span>
+                              </div>
+                          </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <p>Loreum Ipsum</p>
+                      </mat-expansion-panel>
+
+                      <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                          <mat-panel-title>
+                            <div fxLayout="row" fxLayoutAlign="start center" class="font13">
+                                    <mat-icon class="s-16 mr-12"><i class="fa fa-files-o" aria-hidden="true"></i></mat-icon>
+                                    <span class="username mr-12">Loreum Ipsum</span>
+                            </div>
+                          </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <p>Loreum Ipsum</p>
+                      </mat-expansion-panel>
+
+                    </mat-accordion>
+                <!-- expansion panel-->
+            </div>
+        </div>
+        <!-- mobile version-->
+</div>

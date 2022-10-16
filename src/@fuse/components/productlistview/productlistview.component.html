@@ -1,0 +1,45 @@
+
+
+        <div fxFlex="100" fxLayout="row" fxLayout="'row wrap'" fxLayout.xs="column" fxLayoutAlign="center stretch" fxFlex.xs="100" fxLayoutAlign.xs="center center" *ngFor="let number of [0,1,2,3,4,5,6,7]">  
+            <div fxFlex="25" fxLayout="column" fxLayout.xs="row" fxLayoutAlign="center center">
+                <div class="p-relative m-10">
+                        <img class="flag mr-16" [src]="'assets/images/product/phone.jpg'">
+                        <div class="triangletopleft"></div>
+                        <div class="discount-cart">10%<br>
+                            <mat-icon>favorite_border</mat-icon>
+                        </div>
+                </div>
+            </div>
+            <div fxFlex="75" fxLayout="column"  fxLayoutAlign="start start">
+                <div  fxFlex="100" fxLayout="row" fxLayout.xs="row" flFlex.xs="100" fxLayoutAlign="start start">
+                    <div class="p-relative m-10">
+                        <p class="mainbackground ptb-5 cwhite pl-10">Product heading</p>
+                         <p class="cblack">When a breakpoint is activated and the hosting element does NOT have a responsive API defined for the newly activated breakpoint, the Flex-Layout responsive engine uses a fallback, descending-scan algorithm to determine the replacement activation value.</p>
+                        <button mat-button class="user-button yellowbtn p-relative mbl100">
+                            <div fxLayout="row" fxFlex="100" fxLayoutAlign="start center" fxLayoutAlign.xs="center center" class="cwhite font13 text-uppercase">
+                               <mat-icon class="s-16">shopping_cart</mat-icon>
+                                <span class="username mr-12">Loreum Ipsam</span>
+                                
+                            </div>
+                        </button>
+                        
+                    </div>
+                </div>
+                <div fxFlex="100" fxLayout="row" fxLayout.xs="row" fxLayoutAlign="center center" fxFlex.xs="100" class="m-10 mt-t-30 wi100">
+                    
+                       <div fxFlex="50" fxLayout="column" fxLayoutAlign="center center">
+                         
+                           <p class="clav"><b>$200.00</b></p>
+                          
+                        </div> 
+                        <div fxFlex="50" fxLayout="column" fxLayoutAlign="start center">
+                           
+                           <p class="cblack"><b>Loreum Ipsum</b></p>
+                          
+                        </div>  
+                    
+                 </div>
+            </div>
+                    
+        </div>
+        

@@ -1,0 +1,42 @@
+
+
+<div class="page-layout blank p-24">
+    <div class="breadcrumb">
+    	<breadcrumb fxFlex="100" fxLayout="row"></breadcrumb>
+    </div>
+<div fxLayout="row" fxLayout="'row wrap'" class="form-div br-btm"  *ngFor="let number of [0,1,2,3,4]">
+    <div fxFlex="15" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center stretch" fxFlex.xs="100" fxLayoutAlign.xs="center center">   
+                <div class="">
+                    <img class="flag mr-16" [src]="'assets/images/logos/logo.png'">
+                </div>
+    </div>
+    <div fxFlex="60" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="start center" fxFlex.xs="100">   
+                <div class="">
+                    <h3>Loreum Ipsum:135</h3>
+                    <p>Loreum ipsum Loreujm ipsum</p>
+                    <p class="mrb-20">23/08/18</p>
+                     <p class="text-uppercase">Auto rated</p>
+                     <div class="star-icon mrb-20 clav">
+			            <mat-icon class="s-16">star</mat-icon>
+			            <mat-icon class="s-16">star</mat-icon>
+			            <mat-icon class="s-16">star</mat-icon>
+			            <mat-icon class="s-16">star</mat-icon>
+			            <mat-icon class="s-16">star</mat-icon>
+			          </div>
+                </div>
+    </div>
+    <div fxFlex="25" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="end end" fxFlex.xs="100" fxLayoutAlign.xs="end center">   
+                <div class="">
+                    <button mat-button class="user-button graybtn br0" (click)="openDialog()">
+                        <div fxLayout="row" fxLayoutAlign="center center" class="cwhite font13 text-uppercase">
+                           <mat-icon class="s-16 mr-5">reply</mat-icon>
+                            <span class="username mr-12">Loreum Ipsam</span>
+                        </div>
+                    </button>
+
+                </div>
+    </div>
+</div>
+
+
+</div>

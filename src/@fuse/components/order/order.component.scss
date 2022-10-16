@@ -1,0 +1,36 @@
+
+.pt-15
+{
+    padding-top:15px;
+}
+
+.pb-30
+{
+    padding-bottom:30px;
+}
+.dashcard.accor-dash
+{
+    border:none !important;
+}
+.accor-dash .mat-expansion-panel-header
+{
+        background: #954db3 !important;
+        color: #fff !important;
+}
+
+.accor-dash .mat-expansion-panel-header-title{
+     color: #fff !important;
+}
+.accor-dash .mat-expansion-panel{
+    border: 1px solid #ccc;
+    width: 100%;
+    box-shadow:none !important;
+}
+
+@media screen and (min-width:560px){
+	.order-tr
+	{
+		text-align:right;
+	}
+
+}

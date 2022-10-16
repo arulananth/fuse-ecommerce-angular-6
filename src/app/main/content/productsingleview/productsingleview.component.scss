@@ -1,0 +1,29 @@
+.price-cart
+{
+	position:absolute;
+	right:0px;
+}
+.triangletopleft
+{
+	width: 0;
+    height: 0;
+    border-top: 100px solid #954db3;
+    border-right: 100px solid transparent;
+    position: absolute;
+    z-index: 999;
+    top: 0px;
+}
+.discount-cart
+{
+	color: #fff;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.m-10
+{
+	margin:10px;
+}

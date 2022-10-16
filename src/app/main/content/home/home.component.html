@@ -1,0 +1,97 @@
+<div class="page-layout blank p-24">
+ <div fxLayout="row" fxLayoutWrap class="carousel-div" fxLayoutGap="20px">
+    <carousel-card fxFlex="77" fxLayout="row"  fxLayoutAlign="center stretch">
+    </carousel-card>
+    <div fxFlex="23" fxLayout="row"  fxLayoutAlign="center center" [fxLayout]="'row wrap'" class="ad-img">   
+                <div fxFlex="100" fxLayout="column">
+                    <div >
+                        <img class="d-block" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" alt="First slide">
+                    </div>
+                </div>
+                <div fxFlex="100" fxLayout="column">
+                    <div >
+                        <img class="d-block" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg" alt="Second slide">
+                    </div>
+                </div>
+                <div fxFlex="100" fxLayout="column">
+                    <div >
+                        <img class="d-block" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" alt="First slide">
+                    </div>
+                </div>
+    </div>
+</div>
+<div fxLayout="row" [fxLayout]="'row wrap'" class="form-div">
+    <div fxFlex="65" fxLayout="row" fxLayout.xs="column" fxFlex.xs="100" fxLayoutAlign="center stretch">   
+                <div class="">
+                    <h1 class="text-uppercase  text-center ft clav">Loreum Ipsum</h1>
+
+                </div>
+    </div>
+    <div fxFlex="35" fxLayout="row"  fxLayoutAlign="center center" fxLayout.xs="column" fxFlex.xs="100">   
+                <div class="">
+                    <button mat-button class="user-button yellowbtn">
+                        <div fxLayout="row" fxLayoutAlign="center center" class="cblack font13 text-uppercase">
+                           <mat-icon class="s-16">person</mat-icon>
+                            <span class="username mr-12">Loreum Ipsam</span>
+                        </div>
+                    </button>
+                </div>
+    </div>
+</div>
+<div fxLayout.xs="column" fxFlex="100" [fxLayout]="'row wrap'">
+    <div fxFlex="100">
+    <search></search>
+    </div>
+</div>
+<div fxLayout="row" [fxLayout]="'row wrap'" fxLayout.xs="column">
+    <div fxFlex="75" fxLayout="column" fxFlex.xs="100">
+        <div fxLayout="row" [fxLayout]="'row wrap'">
+            <div fxFlex="33.3" *ngFor="let dash of dashCard" fxFlex.xs="100">
+                <product [dashData]="dash"></product>
+            </div>
+        </div>
+       
+      
+    </div>   
+    <div fxFlex="25" fxLayout="column"  fxFlex.xs="100">
+         <div fxLayout="row" [fxLayout]="'row wrap'">
+                <accordin fxFlex="100" fxLayout="row" fxLayoutAlign="center center"></accordin>
+        </div>
+    </div> 
+</div>
+
+
+  <div fxLayout="row" [fxLayout]="'row wrap'" class="info-div">
+    <div fxFlex="50" fxFlex.xs="100" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center stretch">   
+                <div class="">
+                    <h1 class="text-uppercase clav text-center ft">Loreum Ipsum</h1>
+
+                    <h5 class="text-uppercase clav text-center">Loreun Ipsum</h5>
+                </div>
+    </div>
+    <div fxFlex="50" fxFlex.xs="100" fxLayout="row"  fxLayout.xs="column" fxLayoutAlign="center center">   
+                <div class="">
+                    <button mat-button class="user-button laverderbtn">
+                        <div fxLayout="row" fxLayoutAlign="center center" class="cwhite font13 text-uppercase">
+                           <mat-icon class="s-16 mr-5">credit_card</mat-icon>
+                            <span class="username mr-12">Loreum Ipsam</span>
+                        </div>
+                    </button>
+                </div>
+    </div>
+  </div>
+  <div fxLayout="row" fxLayoutWrap>
+    <div fxFlex="100">
+        <h1 class="bestpartner clav text-center text-uppercase ft">Best partner of the month</h1>
+    </div>
+  </div>
+  <div  fxLayout.xs="column"  [fxLayout]="'row wrap'">
+    <div fxFlex="33.3" *ngFor="let dash of dashCard">
+         <partner [dashData]="dash"></partner>
+    </div>    
+  </div>
+
+</div>
+
+
+

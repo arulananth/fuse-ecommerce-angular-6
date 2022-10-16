@@ -1,0 +1,75 @@
+<div id="main-navigation" class="nav"
+     [ngClass]="{'horizontal':layout === 'horizontal', 'vertical':layout === 'vertical'}">
+
+    <!-- Vertical Navigation Layout -->
+    <ng-container *ngIf="layout === 'vertical'">
+
+       
+
+    </ng-container>
+    <!-- / Vertical Navigation Layout -->
+
+    <!-- Horizontal Navigation Layout -->
+    <ng-container *ngIf="layout === 'horizontal'">
+        
+        <div fxFlex fxFill fxLayout="'row wrap'" fxLayoutAlign="start center">
+          <div fxFlex="1 0 auto" fxLayout="row" fxLayoutAlign="start center" fxLayoutAlign.xs="center center" fxFlex.xs="100">
+            
+               <div class="px-8 px-mat-16 cwhite font13">
+                    <img class="flag mr-16" [src]="'assets/images/logos/logo.png'">
+                </div>
+            </div>
+            <div class="" fxLayout="row" fxLayoutAlign="end center" fxFlex.xs="100" fxLayout.xs="column" fxLayoutAlign.xs="center end" fxHide fxShow.xs="true" class="ham-nav">
+                <button mat-icon-button class="toggle-button-navbar"
+                   
+                    (click)="toggleMenu()" fxHide.gt-xs>
+                <mat-icon>menu</mat-icon>
+               </button>
+
+            </div>
+            <div class="wi100 mobilemenu" [@slideInOut]="menuState">
+                    <mat-accordion>
+                      <mat-expansion-panel *ngFor="let number of [0,1,2,3]">
+                        <mat-expansion-panel-header>
+                          <mat-panel-title>
+                            Loreum Ipsum
+                          </mat-panel-title>      
+                        </mat-expansion-panel-header>
+                           <mat-list role="list">
+                              <mat-list-item role="listitem" *ngFor="let number of [0,1,2,3]">Loreum Ipsum</mat-list-item>
+                            </mat-list>
+                      </mat-expansion-panel>
+                    </mat-accordion>
+                    
+            </div>
+           <div class="" fxFlex="0 1 auto" fxLayout="row" fxLayoutAlign="start center" fxHide.xs="true">
+                   
+                    <div *ngFor="let number of [0,1,2,3]">
+                        <button mat-button  class="toolbar-user-btn" [matMenuTriggerFor]="userMenu">
+                            <span fxLayout="row" fxLayoutAlign="start center">
+                                <span class="name" fxHide fxShow.gt-xs>Loreum Ipdum</span>
+                                <mat-icon class="icon" fxHide fxShow.gt-xs>keyboard_arrow_down</mat-icon>
+                            </span>
+                        </button>
+                    </div>
+                    <mat-menu #userMenu="matMenu" [overlapTrigger]="false">
+                        <button mat-menu-item>
+                            <mat-icon>account_circle</mat-icon>
+                            <span>My Profile</span>
+                        </button>
+                        <button mat-menu-item class="">
+                            <mat-icon>mail</mat-icon>
+                            <span>Inbox</span>
+                        </button>
+                        <button mat-menu-item class="">
+                            <mat-icon>exit_to_app</mat-icon>
+                            <span>Logout</span>
+                        </button>
+                    </mat-menu>
+                    
+            </div>
+       </div>
+    </ng-container>
+    <!-- / Horizontal Navigation Layout -->
+
+</div>

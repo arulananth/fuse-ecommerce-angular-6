@@ -1,0 +1,103 @@
+.discount-cart
+{
+    color: #fff;
+    position: absolute;
+    top: 0;
+    z-index: 1001;
+    padding-left: 10px;
+    padding-top: 10px;
+    left:0;
+}
+
+.m-10
+{
+    margin:10px;
+}
+.price-cart
+{
+    position:absolute;
+    right:0px;
+}
+.triangletopleft
+{
+    width: 0;
+    height: 0;
+    border-top: 100px solid #954db3;
+    border-right: 100px solid transparent;
+    position: absolute;
+    z-index: 1000;
+    top: 0px;
+    left:0px;
+}
+.table-single
+{
+    thead
+    {
+        background: #954db3 !important;
+        color:#fff !important;
+        tr
+        {
+            font-size:15px !important;
+            th
+            {
+                font-size:15px !important;
+            }
+        }
+    }
+    tbody
+    {
+        tr
+        {
+            td
+            {
+                font-size:15px !important;
+            }
+        }
+    }
+}
+
+.plr-40{
+    padding-left:40px;
+    padding-right:40px;
+}
+
+.pull-right
+{
+    float:right !important;
+}
+.img-gal
+{
+    button.imgaction
+    {
+               background: #954db3 !important;
+                cursor: pointer;
+                margin: 3px;
+                &:disabled
+                {
+                    background: rgba(149, 77, 179, 0.4) !important;
+                }
+    }
+    .prevs
+    {
+                
+                i{
+                    color:#fff !important;
+                    height: auto !important;
+                    min-height: auto !important;
+                    padding: 8px;
+                }
+                
+    }
+    
+    .nexts
+    {
+           
+            i{
+                    color:#fff !important;
+                    height: auto !important;
+                    min-height: auto !important;
+                    padding: 8px;
+            }
+    }
+
+}
